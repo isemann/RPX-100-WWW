@@ -1,0 +1,36 @@
+Item,Qty,Reference(s),Value,Footprint,Distributor,Distributor No,Manufacturer
+1,5,"C1, C4, C6, C7, C10",1nF,C_0603_1608Metric,Mouser,80-C0603C102K4RECAUT,KEMET
+2,2,"C2, C3",100pF,C_0603_1608Metric,Mouser,80-C0603X101G1GAUTO,KEMET
+3,1,C5,2.7pF,C_0603_1608Metric,Mouser,77-VJ0603D2R7BXPAJ,Vishay / Vitramon
+4,1,C8,15nF,C_0603_1608Metric,Mouser,77-VJ0603Y153JXAAC,Vishay / Vitramon
+5,2,"C9, C11",10nF,C_0603_1608Metric,Mouser,80-C0603C103KARAUTO,KEMET
+6,1,C12,220uF,CP_Radial_D10.0mm_P5.00mm,Mouser,80-ESK227M350AQ4AA,KEMET
+7,1,C13,1uF,C_0603_1608Metric,Mouser,581-06035D105KAT2A,Kyocera AVX
+8,1,D1,8.2V Zener,D_DO-41_SOD81_P7.62mm_Horizontal,Mouser,512-1N4738A,onisemi
+9,1,IC1,PSA-14+,SOT-343_SC-70-4_Handsoldering,Mouser,139-PSA-14+,Mini-Circuits
+10,1,IC2,74LS244_Split,SOIC-20W_7.5x12.8mm_P1.27mm,Mouser,595-SN74LVCH244ADWR,Texas Instruments
+11,1,IC3,VSW2-33-10W,JZ1436,Mouser,139-VSW2-33-10W,Mini-Circuits
+12,8,"T1, T2, T3, T4, T5, T6, T7, T8",BSS138,SOT-23,Mouser,771-BSS138P215,Nexperia
+13,1,T11,MRFE6VS25NR1,TRANS_MRFE6VS25NR1,Mouser,841-MRFE6VS25NR1,NXP Semiconductors
+14,1,J1,TX-SDR,SMA_Amphenol_132291_Vertical,Mouser,571-5-1814832-2,TE Connectivity
+15,1,J2,RX-SDR,SMA_Amphenol_132291_Vertical,Mouser,571-5-1814832-2,TE Connectivity
+16,1,J3,GPIO CM4,PinHeader_2x20_P2.54mm_Vertical,Mouser,649-68000-220HLF,TE Connectivity
+17,1,J4,GPIO SDR,PinHeader_2x05_P2.54mm_Vertical,RS-Components,832-3528,10WAY
+18,1,J5,GPIO EXT Read,PinHeader_1x04_P2.54mm_Vertical,RS-Components,543-7738,TE Connectivity
+19,1,J6,GPIO EXT R/W,PinHeader_1x04_P2.54mm_Vertical,RS-Components,543-7738,TE Connectivity
+20,1,J7,Power,PinHeader_1x04_P2.54mm_Vertical,RS-Components,543-7738,TE Connectivity
+21,1,J8,ANT,SMA_Amphenol_132291_Vertical,Mouser,571-5-1814832-2,TE Connectivity
+22,1,K1,TX2SA-5V,TX2SA-LT,Mouser,769-TX2SA-5V,Pamasonic
+23,1,L1,2.7uH,L_0603_1608Metric,Mouser,70-ILSB0603ER2R7K,Vishay / Dale
+24,1,L2,47nH,L_0603_1608Metric,Mouser,871-B82496C3470G000,TE Connectivity
+25,1,L3,4 turns,"AWG 20, 0.89mm Copper",,,
+26,1,"LED1, LED2, LED3, LED4",GPIO1,LED_0603_1608Metric,Mouser,710-155060GS75300,Wurth Elektronik
+27,1,LED5,TX LED,LED_0603_1608Metric,Mouser,710-155060RS75300,Wurth Elektronik
+28,1,LED6,RX LED,LED_0603_1608Metric,Mouser,710-155060YS75300,Wurth Elektronik
+29,6,"R1, R6, R11, R16, R24, R25",1k Ohm,R_0603_1608Metric,Mouser,71-CRCW06031K00JNECC,Vishay / Dale
+30,16,"R2, R3, R4, R5, R7, R8, R9, R10, R12, R13, R14, R15, R17, R18, R19, R20",10k Ohm,R_0603_1608Metric,Mouser,71-CRCW060310K0JNEAC,Vishay / Dale
+31,1,R21,5k Potentiometer,Potentiometer_Bourns_3224W_Vertical,Mouser,652-3223W-1-502,Bourns
+32,1,R22,15 Ohm,R_0603_1608Metric,Mouser,71-CRCW060315R0FKEAC,Vishay / Dale
+33,1,R23,5.6k Ohm,R_0603_1608Metric,Mouser,71-CRCW06035K60JNEAC,Vishay / Dale
+34,1,E1,Ferrite Cable Cores 43 SHIELD BEAD Z=131 OHM @100MHz,,Mouser,623-2643021801,Fair-Rite
+35,1,"E2, E3",Ferrite Rings 67 MULTI-APERTURE 13.3mm 6.6mm 7.5mm,,Mouser,623-2867001502,Fair-Rite

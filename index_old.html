@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="theme-color" content="white" />
+  <title>OE3BIA</title>
+  <link rel="icon" href="images/oevsv.ico" />
+  <link rel="apple-touch-icon" href="images/logo152.png">
+  <meta name="theme-color" content="white" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="Out of Band">
+  <meta name="msapplication-TileImage" content="images/logo144.png">
+  <meta name="msapplication-TileColor" content="#FFFFFF">
+  <meta name="Description" content="We connect you when the Internet is down ...">
+  <link rel="manifest" href="/manifest.json">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+
+<body class="fullscreen">
+  <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+    <!-- Brand -->
+    <a class="navbar-brand" href="#"><img src="images/oevsv.png" height="42" style="padding-right: 20px;" />WRAN IEEE 802.22</a>
+    <!-- Toggler/collapsibe Button -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <!-- Links -->
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="#rpx-100">RPX-100</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#WRAN">WRAN Experiment</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#LoRa">LoRa</a>
+        </li>
+
+        <!-- Dropdown -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+            Resources
+          </a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" style="color: red;" href="http://rpx-100.net" target="_blank">RPX-100 WEB API</a>
+            <a class="dropdown-item" href="https://outofband.info:8084/" target="_blank">LoRa Chripstack Server</a>
+            <a class="dropdown-item"
+              href="https://docs.google.com/presentation/d/e/2PACX-1vQjh2NOZDqOUoY7hfxhkQ4hxQz-e9j1oipNl1l4RmKi2hVUVFf2zLA0vUI7aNBxssfW4vhr3iyscmBp/pub?start=true&loop=true&delayms=5000"
+              target="_blank">Status WRAN Project</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <div class="container-fluid">
+    <div class="row menu" id="rpx-100">
+      <div class="col-sm-1"></div>
+      <div class="col-sm-5 text">
+        <p>
+          <b>RPX-100 Transceiver Kit for Radio Amateurs</b><br />
+          A modular kit for a software defined transceiver build with Raspberry <a
+            href="https://www.rakwireless.com/en-us/company/wisblock-series">Compute Module 4</a>, the <a
+            href="imemicro.com/products/boards/limesdr-mini/">LimeSDR mini</a> and a Radio Frontend with software
+          defined band pass filters and output power of 10W.<br /><br />The kit includes the Radio Frontend manufactured
+          with a form fator to fit as hat-board on the Compute Module 4.<br /><br />
+          <img src="images/RPX-100_front.jpg" width="100%"><br /><br />
+          <img src="images/RPX-100_back.jpg" width="100%"><br /><br />
+          A Wifi interface connects the RPX-100 with the LAN for remote operation, debugging and programming. The
+          software id written C++ using liquid-dsp libraries.<br/><br/>The concpet of the WRAN software uses the IEEE 802.22 frame structure for prototyping to make use of super
+          frames and preambles for cognitive channel management, which allows a dynamic resource allocation between base stations, but also between multiple users at one base station. Orthogonal Frequency Division Multiple Access (OFDMA) is used in the upper layers, as Modulation techniques QPSK, 16-QAM and 64-QAM is supported. The software will support a connection-oriented MAC layer with cognitive functionality for dynamic and adaptive scheduling and management of coexistence of base stations in the same time-frequency domain (superframes).
+        </p>
+      </div>
+      <div class="col-sm-5 list">
+        <p>
+          <b>Specifications:</b><br />
+        <ul>
+          <li>Supply Voltage 12V for mobile operation or 220V with internal PSU.</li>
+          <li>4.3 inch touch screen</li>
+          <li>Internal speakers and microphone</li>
+          <li>External microphon with PTT</li>
+          <li>Software defined filters and amplifier for 6m, 2m and 70cm Radio Amateur bands</li>
+          <li>Premaplifier with 24dBm for 0-2.4GHz with external access</li>
+          <li>Raspian Operating System enabling devlopers to write new sourcecode</li>
+          <li>Output Power at 54MHz: 0 - 15 Watt</li>
+          <li>Output Power at 144MHz: 0 - 10 Watt</li>
+          <li>Output Power at 430MHz: 0 - 10 Watt</li>
+        </ul>
+        </p>
+        <p>
+          <b>Schematic of Radio Frontend:</b><br />
+          <a href="https://outofband.info/images/Schematic.png" target="_blank"><img src="images/Schematic.png"
+              width="100%"></a><br /><br />
+          <b>Bill of Material:</b><br />
+          <a href="https://outofband.info/images/BOM.png" target="_blank"><img src="images/BOM.png"
+              width="100%"></a><br /><br />
+        </p>
+      </div>
+      <div class="col-sm-1"></div>
+    </div>
+    <div class="row menu" id="WRAN">
+      <div class="col-sm-1"></div>
+      <div class="col-sm-10 text" style="margin-right: 20px; margin-left: 20px;">
+        <p>
+          <b><a href="https://standards.ieee.org/standard/802_22-2019.html" target="_blank">The Wireless Regional Area
+              Network – WRAN</a></b> is establishing a new digital transmission procedure allowing high speed data
+          communication in Sub-GHz Frequency bands usinf the IEEE 802.22 standard. This research project implements of
+          a new digital communication system will be based on the concept of a software defined radio using
+          commercially available hardware and open source software.</br></br>Hardware and software design of a base
+          station and CPE-like user device shall allow a modular use with different radio front ends supporting all
+          possible Sub-GHz frequency bands. The <a href="https://oevsv.at/" target="_blank">Austrian Radio Amateur
+            Association (&Ouml;VSV)</a> together with the Institute of Telecommunication of the <a
+            href="https://www.tuwien.at/" target="_blank">Vienna University of Technology</a> have been granted a
+          permit by the Austrian government to test operation of such a new digital communication system in HF, VHF
+          and UHF frequency bands.
+        </p>
+      </div>
+      <div class="col-sm-1"></div>
+    </div>
+    <div class="row">
+      <div class="col-sm-1"></div>
+      <div class="col-sm-5" style="margin-right: 20px; margin-left: 20px;">
+        <img src="images/RFE4.png" width="100%" frameborder="0">
+      </div>
+      <div class="col-sm-5 list">
+        <p>
+          <b>Goals of the WRAN project:</b></br>
+        <ul>
+          <li>Define a new transmission protocol for wideband data communication for efficient use of a 2Mhz spectrum
+            in
+            the 6m or 70cm band and suitable as “last mile” connection for existing backbone networks.</br></br></li>
+          <li>Software development and implementation of the transmission protocol on a prototype SRD hardware for a
+            base station and end users devices.</br></br></li>
+          <li>Test and evaluation the new transmission protocol in lab- and field environments on selected Radio
+            Amateur
+            Relay locations in Austria.</br></br></li>
+          <li>Benchmark how reliability and scalability such a new transmission protocol can be operated in the HF,
+            VHF
+            and UHF band.</br></br></li>
+        </ul>
+        </p>
+      </div>
+      <div class="col-sm-1"></div>
+    </div>
+    <div class="row">
+      <div class="col-sm-1"></div>
+      <div class="col-sm-5" style="margin-right: 20px; margin-left: 20px;">
+        </br>
+        <img src="images/WRANcode.png" width="100%" frameborder="0">
+      </div>
+      <div class="col-sm-5">
+        </br>
+        <img src="images/Concept_CPE.png" width="100%" frameborder="0">
+      </div>
+      <div class="col-sm-1"></div>
+    </div>
+    <div class="row menu" id="LoRa">
+      <div class="col-sm-1"></div>
+      <div class="col-sm-5 text">
+        <p><b><a href="https://lora-alliance.org/" target="_blank">Long Range Wireless - LoRa</a></b> utilizes Chirp
+          Spread Spectrum modulation to create a long-range communication link. Chirp Spread Spectrum modulation has the
+          same low power characteristics as FSK modulation but significantly increases the communication
+          range.<br /><br />This technology has been used in military and space communication for decades due to the
+          long communication distances that can be achieved and robustness to interference.</br></br>This network is
+          build with multiple LoRa Gatways, in Austria and in the Netherlands, using <a
+            href="https://www.rakwireless.com/" target="_blank">RAK Wireless</a> LPWAN Concentrator RAK2245.<br /><br />
+          Intelligent environmental sensors designed with <a href="">WisBlock Technology</a> make the deployment of
+          hundreds of sensors easy and effortable.
+        </p>
+      </div>
+      <div class="col-sm-5" style="margin-right: 20px; margin-left: 20px;">
+        <iframe src="https://outofband.info:8080/d/jqSvyrGnz/lora-temperature-monitoring?orgId=1&refresh=10s&kiosk"
+          title="Out of Band" frameborder="0" class="LoRa"></iframe>
+      </div>
+      <div class="col-sm-1"></div>
+    </div>
+    <div class="row">
+      <div class="col-sm-1"></div>
+      <div class="col-sm-5" style="margin-right: 20px; margin-left: 20px;">
+        <iframe src="https://outofband.info:8080/d/JRE2yrG7k/lora-humidity-monitoring?orgId=1&refresh=10s&kiosk"
+          title="Out of Band" frameborder="0" class="LoRa"></iframe>
+      </div>
+      <div class="col-sm-5" style="margin-right: 20px; margin-left: 20px;">
+        <iframe src="https://outofband.info:8080/d/UpFxs9M7k/lora-air-pressure-monitoring?orgId=1&refresh=10s&kiosk"
+          title="Out of Band" frameborder="0" class="LoRa"></iframe>
+      </div>
+      <div class="col-sm-1"></div>
+    </div>
+  </div>
+  </div>
+  <div class="footer">
+    <div class="row">
+      <div class="col-sm-4">
+        OE3BIA, OE1VMC, OE3MZC, OE1MCU<br/> and OE1XTU
+      </div>
+      <div class="col-sm-4">
+        <br />&copy; Bernhard Isemann <img src="images/logo8.png" />, 2021<br/>
+      </div>
+      <div class="col-sm-4">
+        Phone: +43 664 5703430<br />
+        Email: <a href="mailto:bernhard@isemann.nl">bernhard@isemann.at</a>
+      </div>
+    </div>
+  </div>
+  <script src="scripts/main.js"></script>
+</body>
+
+</html>

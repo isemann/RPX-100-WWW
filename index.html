@@ -1,0 +1,349 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="theme-color" content="white" />
+  <title>RPX-100</title>
+  <link rel="icon" href="images/oevsv.ico" />
+  <link rel="apple-touch-icon" href="images/logo152.png">
+  <meta name="theme-color" content="white" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="Out of Band">
+  <meta name="msapplication-TileImage" content="images/logo144.png">
+  <meta name="msapplication-TileColor" content="#FFFFFF">
+  <meta name="description" content="Bernhard Isemann">
+  <meta name="author" content="Bernhard Isemann">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <!-- Google tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-210886190-1">
+  </script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-210886190-1');
+  </script>
+</head>
+
+<body class="fullscreen">
+  <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+    <!-- Brand -->
+    <a class="navbar-brand" href="#"><img src="images/oevsv.png" height="44px"
+        style="padding-right: 20px;" />RPX-100</a>
+    <!-- Toggler/collapsibe Button -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <!-- Links -->
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="#HAMNET">Access to HAMNET</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#WRAN">WRAN Project</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#RPX-100">RPX-100 Kit</a>
+        </li>
+
+        <!-- Dropdown -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+            Resources
+          </a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" style="color: green" href="https://oevsv.atlassian.net/wiki/spaces/RPX/overview"
+            target="_blank">RPX-100 Project Documentation</a>
+            <a class="dropdown-item" style="color: orange" href="https://rpx-100.net/getstarted.html"
+              target="_blank">RPX-100 getting started</a>
+            <a class="dropdown-item" style="color: royalblue;"
+              href="https://docs.google.com/presentation/d/e/2PACX-1vRvlVTNHi5S8BJggPGt8hyakuyJRCSqSXhE0L3-i0zjATTxZTYzYbk2uFqdoENcqT0ktSDRonfO7Om2/pub?start=true&loop=true&delayms=5000"
+              target="_blank">Status WRAN Project</a>
+          </div>
+        </li>
+
+        <!-- Dropdown -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+            RPX-100 WEB API
+          </a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" style="color: red;" href="http://isemann.fr:8080" target="_blank">OE1XTU - JN88EE47</a>
+            <a class="dropdown-item" style="color: royalblue" href="http://isemann.fr:8081" target="_blank">OE3BIA - JN88AF18</a>
+            <a class="dropdown-item" style="color: lightgray" href="http://isemann.fr:8082" target="_blank">F4VVO - JN18DU75 (soon)</a>
+          </div>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link anounce" href="https://discord.gg/QntXgsAJXp">Join us on Discord</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <div class="container-fluid">
+    <div class="row menu" id="HAMNET">
+      <div class="col-sm-1"></div>
+      <div class="col-sm-5 text" style="margin-top: 30px;">
+        <p><a href="https://oevsv.at" target="_blank">The Austrian Amateur Radio Society (&Ouml;VSV)</a> establsihes a
+          new <b>Open SDR Platform</b> for digital transmission allowing high speed data communication in Sub-GHz
+          Frequency bands.
+          Requirements are to use a wideband transmission mode to support state of the art bandwidth for each user, and
+          to enable multiple users at the same time to connect to a base station providing access to HAMNET.<br><br>
+          The RPX-100 Kit is based on the concept of a software defined radio using commercial available
+          hardware and open source software. This addresses and motivates a larger community of developers and radio
+          amateurs. <br><br>Hardware and software are designed as kit, <a href="https://rpx-100.net/#RPX-100">the
+            RPX-100</a>,
+          which allows a modular use and supports all possible Sub-GHz frequency bands.<br><br>
+          <a href="https://www.nt.tuwien.ac.at/" target="_blank">The Institute of Telecommunications of TU-Wien</a> has
+          successfully requested a permit to test operation of such a new digital communication system at 52-54MHz in
+          the
+          6m band.
+          Multi user access is achieved by using OFDMA as channel access methodology based on IEEE 802.22 (WRAN)
+          standard.<br><br>
+          The project has been granted a funding from Amateur <a
+            href="https://www.ampr.org/grants/2022-grants/grant-wireless-regional-area-network-in-sub-ghz-bands-as-last-mile-for-hamnet/">Radio
+            Digital Communications (ARDC)</a> in March 2022 following anevaluation by an international Grants Advisory
+          Committee.
+        </p>
+      </div>
+      <div class="col-sm-5 text" style="margin-right: 20px; margin-left: 20px; margin-top: 30px;">
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img class="d-block w-100" src="images/RPX-100_WebSDR.png" alt="First slide">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="images/PCB Boards.jpeg" alt="Second slide">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="images/PA_Case.jpeg" alt="Third slide">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="images/HF Gehäuse.jpeg" alt="Forth slide">
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+      <div class="col-sm-1"></div>
+    </div>
+    <div class="row menu" id="RPX-100">
+      <div class="col-sm-1"></div>
+      <div class="col-sm-5 text">
+        <p>
+          <b>RPX-100 Transceiver Kit for Radio Amateurs</b><br>
+          The RPX-100 is a modular kit for a software defined transceiver using standard embedded boards running linux
+          such as the <a href="https://www.hardkernel.com/shop/odroid-c4/" target="_blank">Odroid C4</a>.
+          <br><br>
+          <a href="https://rpx-100.net/images/RPX-100_foto.png" target="_blank"><img src="images/RPX-100_foto_small.png"
+              width="70%"></a>
+          <a href="https://rpx-100.net/images/PCBs.png" target="_blank"><img src="images/PCBs.png" width="28%"></a>
+          <br /><br /><br />
+          Most common Software Defined Radios with USB interface are supported, testing was done with the <a
+            href="https://limemicro.com/products/boards/limesdr-mini/" target="_blank">LimeSDR mini</a>. The Kit
+          includes a Radio Frontend with software
+          defined band pass filters and a calss A amplfier with output power of 10W and is designed with a form factor
+          to fit the board96 standard.
+          <br><br>
+          It is operated at 12V/48V to allow power supply via the build-in power unit or via an
+          external source. Interfaces such as GPIO, Disply Boards, etc. are available for optional add-ons such
+          as display, Microphone or buttons and keyboard. Alternatively a Raspberry <a
+            href="https://www.raspberrypi.com/products/compute-module-4/?variant=raspberry-pi-cm4001000"
+            target="_blank">Compute Module 4</a> or the <a href="https://www.hardkernel.com/shop/odroid-c4/"
+            target="_blank">Ordoid C4</a> can be used as embedded CPU.<br /><br />
+        <p>
+          <a><img src="images/pcb_icon_green_32.png"></a><b> Schematic of RPX-100 modules V1.7:</b><br>
+        <ul>
+          <li><a href="https://rpx-100.net/files/RPX-100_Logic_V1.7.pdf" target="_blank">Logic Module
+            </a><br><br></li>
+          <li><a href="https://rpx-100.net/files/RPX-100_Filter_V1.7.pdf" target="_blank">Filter and Pre-Amplifier
+            </a><br><br></li>
+          <li><a href="https://rpx-100.net/files/RPX-100_PA_V1.7.pdf" target="_blank">HF PA Module 30-512MHz
+              30W</a><br><br></li>
+          <li><a href="https://rpx-100.net/files/RPX-100_PowerSupply_V1.7.pdf" target="_blank">Power Supply</a><br><br>
+          </li>
+        </ul>
+        </p>
+      </div>
+      <div class="col-sm-5 list">
+        <p>
+          <a href="#RPX-100" target="_blank"><img src="images/pcb_icon_red_32.png"></a><b>
+            Specifications V1.7:</b><br>
+        <ul>
+          <li>Supply Voltage 12V/48V for mobile operation or 220V with internal PSU.</li>
+          <li>Software defined filters and Class A amplifier for 6m, 2m and 70cm Radio Amateur bands.</li>
+          <li>Premaplifier with 24dBm and Class A power amplifier for 30 - 512 MHz with 10W (max. 30W):</li>
+          <img src="images/Class_A.png" width="100%"><br><br>
+          <li>Linux Operating System (Debian) enabling devlopers to write new sourcecode</li>
+          <li>Optional extentions:</li>
+          <ul>
+            <li>4.3 inch touch screen</li>
+            <li>Internal speakers and microphone</li>
+            <li>External microphon with PTT</li>
+          </ul>
+          <li>Native C++ software stack, using liquid-dsp libraries, no framework required.</li>
+        </ul>
+        <br>
+        </p>
+        <p>
+          <a href="https://rpx-100.net/images/RPX-100_PA_V1.7.png" target="_blank"><img
+              src="images/pcb_icon_blue_32.png"></a><b> PCB Layout of RPX-100 modules V1.7:</b><br>
+        <ul>
+          <li><a href="https://rpx-100.net/images/RPX-100_LOGIC_V1.7.png" target="_blank">Logic Module
+            </a><br /><br /></li>
+          <li><a href="https://rpx-100.net/images/RPX-100_Filter_V1.7.png" target="_blank">Filter and Pre-Amplifier
+              Module
+            </a><br /><br /></li>
+          <li><a href="https://rpx-100.net/images/RPX-100_PA_V1.7.png" target="_blank">HF PA Module 30-512MHz
+              30W</a><br><br></li>
+          <li><a href="https://rpx-100.net/images/RPX-100_Power_Supply_V1.7.png" target="_blank">Power Supply</a><br><br></li>
+        </ul>
+        </p>
+      </div>
+      <div class="col-sm-1"></div>
+    </div>
+    <div class="row">
+      <div class="col-sm-1"></div>
+      <div class="row">
+        <div class="col-sm-1"></div>
+        <div class="col-sm-5" style="margin-right: 20px; margin-left: 20px;">
+          <img src="images/Modular_Concept.png" width="100%" frameborder="0">
+        </div>
+        <div class="col-sm-5 text" style="margin-right: 20px; margin-left: 20px;">
+          <p>
+            The concpet of the WRAN software uses the IEEE 802.22 frame structure for prototyping to make use of super
+            frames and preambles for cognitive channel management, which allows a dynamic resource allocation between
+            base stations, but also between multiple users at one base station.<br><br>
+            Orthogonal Frequency Division Multiple
+            Access (OFDMA) is used in the upper layers, as Modulation techniques QPSK, 16-QAM and 64-QAM is
+            supported.<br></br>
+            The software will support a connection-oriented MAC layer with cognitive functionality for dynamic and
+            adaptive
+            scheduling and management of coexistence of base stations in the same time-frequency domain
+            (superframes).<br><br>
+            The software is written in C++ using liquid-dsp libraries and includes a WEB Waterfall Spectrum based on RFC
+            6455 to monitor HF activtiy remotley.
+          </p>
+        </div>
+        <div class="col-sm-1"></div>
+      </div>
+      <div class="col-sm-1"></div>
+    </div>
+    <div class="row menu" id="WRAN">
+      <div class="col-sm-1"></div>
+      <div class="col-sm-10 text" style="margin-right: 20px; margin-left: 20px;">
+        <p>
+          <b><a href="https://standards.ieee.org/standard/802_22-2019.html" target="_blank">The Wireless Regional Area
+              Network – WRAN</a></b> is establishing a new digital transmission procedure allowing high speed data
+          communication in Sub-GHz Frequency bands usinf the IEEE 802.22 standard. This research project implements of
+          a new digital communication system will be based on the concept of a software defined radio using
+          commercially available hardware and open source software.</br></br>Hardware and software design of a base
+          station and CPE device allows a modular use with different radio front ends supporting all
+          possible Sub-GHz frequency bands. The <a href="https://oevsv.at/" target="_blank">Austrian Radio Amateur
+            Society (&Ouml;VSV)</a> together with the Institute of Telecommunication of the <a
+            href="https://www.tuwien.at/" target="_blank">Vienna University of Technology</a> have been granted a
+          permit by the Austrian government to test operation of such a new digital communication system in HF, VHF
+          and UHF frequency bands.
+        </p>
+      </div>
+      <div class="col-sm-1"></div>
+    </div>
+    <div class="row">
+      <div class="col-sm-1"></div>
+      <div class="col-sm-5" style="margin-right: 20px; margin-left: 20px;">
+        <img src="images/SWStack.png" width="80%" frameborder="0">
+      </div>
+      <div class="col-sm-5 list">
+        <p>
+          <b>Goals of the WRAN project:</b></br>
+        <ul>
+          <li>Evaluate and select appropriate wireless communication protocol similar to existing Wireless LAN protocols
+            but suitable for the VHF and UHF bands.</br></br></li>
+          <li>Define a new transmission protocol for wideband data communication for efficient use of a 2Mhz spectrum
+            in
+            the 6m or 70cm band and suitable as “last mile” connection for existing backbone networks.</br></br></li>
+          <li>Software development and implementation of the transmission protocol on a prototype SRD hardware for a
+            base station and end users devices.</br></br></li>
+          <li>Test and evaluation the new transmission protocol in lab- and field environments on selected Radio
+            Amateur
+            Relay locations in Austria.</br></br></li>
+          <li>Benchmark how reliability and scalability such a new transmission protocol can be operated in the HF,
+            VHF
+            and UHF band.</br></br></li>
+          <li>Provide a kit for Radio Amateurs to build and develop their own base stations and end-user devices for
+            the new transmission protocol.</br></br></li>
+        </ul>
+        </p>
+      </div>
+      <div class="col-sm-1"></div>
+    </div>
+    <div class="row">
+      <div class="col-sm-1"></div>
+      <div class="col-sm-5 list" style="margin-right: 20px; margin-left: 20px;">
+        <p>
+          <b>Project Milestones:</b></br>
+        <ul>
+          <li>The Institute of Telecommunications of TU Wien has been granted a test permit by the Federal Ministry of
+            Agriculture, Regions and Tourism to test and operate the new transmission scheme at a 2 MHz Band from 52-54
+            MHz at 2 selected location in Austria. The permit has been extended for one year till May 2022.</br></br>
+          </li>
+          <li>The IEEE 802.22 frame structure has been selected for prototyping the software and hardware to make use of
+            super frames and preambles for cognitive channel management, which allows a dynamic resource allocation
+            between base stations, but also between multiple users at one base station.</br></br></li>
+          <li>The new hardware and software stack has been successfully tested using the Raspberry Compute Module CM4 in
+            combination with LimeSDR mini. The advantages are a small form factor, performance and the 12V supply
+            Voltage for mobile operation.</br></br></li>
+          <li>A Radio Frontend has been developed and tested for VHF and UHF (6m, 2m and 70cm Band) with a design to fit
+            as hat-board to the Raspberry CM4 IO board and operates with 12V supply voltage. The Output power can be
+            regulated via software between 0 - 10W.</br></br></li>
+        </ul>
+        </p>
+      </div>
+      <div class="col-sm-5">
+        </br>
+        <img src="images/WRAN2022.png" width="100%" frameborder="0">
+      </div>
+      <div class="col-sm-1"></div>
+    </div>
+  </div>
+  </div>
+  <div class="footer">
+    <div class="row">
+      <div class="col-sm-4">
+        <img src="images/oevsv.png" height="44" style="padding-right: 20px;" /> Austrian Radio Amateur Association
+      </div>
+      <div class="col-sm-4" style="padding-top: 10px;">
+        &copy; Österreichischer Versuchssenderverband, 2022
+      </div>
+      <div class="col-sm-4">
+        OE3BIA, OE1VMC, OE9RIR, OE9RWV<br />
+        Email: <a href="mailto:info@rpx-100.net">info@rpx-100.net</a>
+      </div>
+    </div>
+  </div>
+  <script src="scripts/main.js"></script>
+</body>
+
+</html>
