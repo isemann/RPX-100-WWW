@@ -77,16 +77,12 @@
             RPX-100 WEB API
           </a>
           <div class="dropdown-menu">
-            <a class="dropdown-item" style="color: red;" href="http://isemann.fr:8080" target="_blank">OE1XTU - JN88EE47</a>
+            <!-- <a class="dropdown-item" style="color: red; font-style: italic;">Maintenance: Tue, Nov 1st</a> -->
+            <a class="dropdown-item" style="color: green" href="http://isemann.fr:8080" target="_blank">OE1XTU - JN88EE47</a>
             <a class="dropdown-item" style="color: royalblue" href="http://isemann.fr:8081" target="_blank">OE3BIA - JN88AF18</a>
             <a class="dropdown-item" style="color: lightgray" href="http://isemann.fr:8082" target="_blank">F4VVO - JN18DU75 (soon)</a>
           </div>
         </li>
-
-        <li class="nav-item">
-          <a class="nav-link anounce" href="https://discord.gg/QntXgsAJXp">Join us on Discord</a>
-        </li>
-      </ul>
     </div>
   </nav>
   <div class="container-fluid">
@@ -115,13 +111,16 @@
           Committee.
         </p>
       </div>
-      <div class="col-sm-5 text" style="margin-right: 20px; margin-left: 20px; margin-top: 30px;">
+      <div class="col-sm-5 text" style="margin-right: 20px; margin-left: 20px; margin-top: 30px; height: 50vh">
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
           <ol class="carousel-indicators">
             <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
             <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
             <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
             <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="6"></li>
           </ol>
           <div class="carousel-inner">
             <div class="carousel-item active">
@@ -135,6 +134,15 @@
             </div>
             <div class="carousel-item">
               <img class="d-block w-100" src="images/HF Gehäuse.jpeg" alt="Forth slide">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="images/PA_Assembled.jpg" alt="Forth slide">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="images/FilterModule.jpg" alt="Forth slide">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="images/RPX-100Parts.jpg" alt="Forth slide">
             </div>
           </div>
           <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -184,6 +192,8 @@
               30W</a><br><br></li>
           <li><a href="https://rpx-100.net/files/RPX-100_PowerSupply_V1.7.pdf" target="_blank">Power Supply</a><br><br>
           </li>
+          <li><a href="https://rpx-100.net/files/RPX-100_RXTX_V1.7.pdf" target="_blank">RX-TX Antenna Switch</a><br><br>
+          </li>
         </ul>
         </p>
       </div>
@@ -219,6 +229,7 @@
           <li><a href="https://rpx-100.net/images/RPX-100_PA_V1.7.png" target="_blank">HF PA Module 30-512MHz
               30W</a><br><br></li>
           <li><a href="https://rpx-100.net/images/RPX-100_Power_Supply_V1.7.png" target="_blank">Power Supply</a><br><br></li>
+          <li><a href="https://rpx-100.net/images/RPX-100_RXTX_Switch_V1.7.png" target="_blank">RX-TX Anteanna Switch</a><br><br></li>
         </ul>
         </p>
       </div>
@@ -228,24 +239,8 @@
       <div class="col-sm-1"></div>
       <div class="row">
         <div class="col-sm-1"></div>
-        <div class="col-sm-5" style="margin-right: 20px; margin-left: 20px;">
-          <img src="images/Modular_Concept.png" width="100%" frameborder="0">
-        </div>
-        <div class="col-sm-5 text" style="margin-right: 20px; margin-left: 20px;">
-          <p>
-            The concpet of the WRAN software uses the IEEE 802.22 frame structure for prototyping to make use of super
-            frames and preambles for cognitive channel management, which allows a dynamic resource allocation between
-            base stations, but also between multiple users at one base station.<br><br>
-            Orthogonal Frequency Division Multiple
-            Access (OFDMA) is used in the upper layers, as Modulation techniques QPSK, 16-QAM and 64-QAM is
-            supported.<br></br>
-            The software will support a connection-oriented MAC layer with cognitive functionality for dynamic and
-            adaptive
-            scheduling and management of coexistence of base stations in the same time-frequency domain
-            (superframes).<br><br>
-            The software is written in C++ using liquid-dsp libraries and includes a WEB Waterfall Spectrum based on RFC
-            6455 to monitor HF activtiy remotley.
-          </p>
+        <div class="col-sm-10" style="margin-right: 20px; margin-left: 20px;">
+          <img src="images/BlockDiagram.png" width="80%" frameborder="0">
         </div>
         <div class="col-sm-1"></div>
       </div>
@@ -272,29 +267,18 @@
     </div>
     <div class="row">
       <div class="col-sm-1"></div>
-      <div class="col-sm-5" style="margin-right: 20px; margin-left: 20px;">
-        <img src="images/SWStack.png" width="80%" frameborder="0">
-      </div>
-      <div class="col-sm-5 list">
+      <div class="col-sm-10 list" style="margin-right: 20px; margin-left: 20px;">
         <p>
-          <b>Goals of the WRAN project:</b></br>
-        <ul>
-          <li>Evaluate and select appropriate wireless communication protocol similar to existing Wireless LAN protocols
-            but suitable for the VHF and UHF bands.</br></br></li>
-          <li>Define a new transmission protocol for wideband data communication for efficient use of a 2Mhz spectrum
-            in
-            the 6m or 70cm band and suitable as “last mile” connection for existing backbone networks.</br></br></li>
-          <li>Software development and implementation of the transmission protocol on a prototype SRD hardware for a
-            base station and end users devices.</br></br></li>
-          <li>Test and evaluation the new transmission protocol in lab- and field environments on selected Radio
-            Amateur
-            Relay locations in Austria.</br></br></li>
-          <li>Benchmark how reliability and scalability such a new transmission protocol can be operated in the HF,
-            VHF
-            and UHF band.</br></br></li>
-          <li>Provide a kit for Radio Amateurs to build and develop their own base stations and end-user devices for
-            the new transmission protocol.</br></br></li>
-        </ul>
+          The concpet of the WRAN software uses the IEEE 802.22 frame structure for prototyping to make use of super
+          frames and preambles for cognitive channel management, which allows a dynamic resource allocation between
+          base stations, but also between multiple users at one base station. Orthogonal Frequency Division Multiple
+          Access (OFDMA) is used in the upper layers, as Modulation techniques QPSK, 16-QAM and 64-QAM is
+          supported.<br></br>
+          The software will support a connection-oriented MAC layer with cognitive functionality for dynamic and
+          adaptive
+          scheduling and management of coexistence of base stations in the same time-frequency domain
+          (superframes). The software is written in C++ using liquid-dsp libraries and includes a WEB Waterfall Spectrum based on RFC
+          6455 to monitor HF activtiy remotley.
         </p>
       </div>
       <div class="col-sm-1"></div>
@@ -338,7 +322,7 @@
         &copy; Österreichischer Versuchssenderverband, 2022
       </div>
       <div class="col-sm-4">
-        OE3BIA, OE1VMC, OE9RIR, OE9RWV<br />
+        OE3BIA, OE1VMC, OE9RIR, OE9RWV, OE1RSA, OE3AEB<br />
         Email: <a href="mailto:info@rpx-100.net">info@rpx-100.net</a>
       </div>
     </div>
